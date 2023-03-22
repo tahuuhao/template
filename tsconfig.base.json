@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@client/*": ["apps/client/src/*"],
+      "@libs/constants/*": ["libs/constants/src/*"],
+      "@libs/entities/*": ["libs/entities/src/*"],
+      "@libs/openapi-generator/*": ["libs/openapi-generator/src/*"],
+      "@libs/swagger-property/*": ["libs/swagger-property/src/*"],
+      "@server/*": ["apps/server/src/*"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
